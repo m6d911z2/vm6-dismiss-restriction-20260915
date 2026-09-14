@@ -7,6 +7,7 @@ commands_restrictions:
       - sender-permission >= write
 queue_rules:
   - name: default
+    autoqueue: true
     batch_size: 1
     queue_conditions:
       - "#commits-behind > 0"
