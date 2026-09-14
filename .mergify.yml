@@ -9,9 +9,9 @@ queue_rules:
   - name: default
     batch_size: 1
     queue_conditions:
-      - commits-behind > 0
+      - #commits-behind > 0
     merge_conditions:
-      - commits-behind > 0
+      - #commits-behind > 0
     merge_method: merge
     update_method: rebase
     update_bot_account: ivastic-vm6-secondary-20260911
