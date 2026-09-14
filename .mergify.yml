@@ -1,10 +1,1 @@
-pull_request_rules:
-  - name: VM6 native dismissal restriction probe
-    conditions:
-      - label = bug
-    actions:
-      dismiss_reviews:
-        approved: true
-        changes_requested: false
-        message: VM6 controlled dismissal restriction probe
-        when: always
+pull_request_rules: []
