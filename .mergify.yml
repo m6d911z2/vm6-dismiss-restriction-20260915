@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: VM6 native dismissal restriction probe
     conditions:
-      - label = vm6-dismiss-trigger-20260915
+      - label = bug
     actions:
       dismiss_reviews:
         approved: true
