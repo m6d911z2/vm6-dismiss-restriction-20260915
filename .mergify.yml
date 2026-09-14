@@ -1,13 +1,17 @@
 pull_request_rules: []
+merge_queue:
+  max_parallel_checks: 1
 commands_restrictions:
   queue:
     conditions:
       - sender-permission >= write
 queue_rules:
   - name: default
-    queue_conditions: []
+    batch_size: 1
+    queue_conditions:
+      - commits-behind > 0
     merge_conditions:
-      - label = vm6-update-bot-never-merge-20260915
+      - commits-behind > 0
     merge_method: merge
     update_method: rebase
     update_bot_account: ivastic-vm6-secondary-20260911
