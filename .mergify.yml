@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: VM6 native dismissal restriction probe
+    conditions:
+      - label = vm6-dismiss-trigger-20260915
+    actions:
+      dismiss_reviews:
+        approved: true
+        changes_requested: false
+        message: VM6 controlled dismissal restriction probe
+        when: always
