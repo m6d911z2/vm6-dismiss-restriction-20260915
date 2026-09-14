@@ -6,7 +6,8 @@ commands_restrictions:
 queue_rules:
   - name: default
     queue_conditions: []
-    merge_conditions: []
+    merge_conditions:
+      - label = vm6-update-bot-never-merge-20260915
     merge_method: merge
     update_method: rebase
     update_bot_account: ivastic-vm6-secondary-20260911
