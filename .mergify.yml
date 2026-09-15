@@ -1,1 +1,17 @@
-pull_request_rules: []
+pull_request_rules:
+  - name: VM6 review bot auth revoke positive
+    conditions:
+      - title = VM6 review bot auth revoke positive 20260915
+    actions:
+      review:
+        type: APPROVE
+        message: VM6 controlled pre-revoke bot approval
+        bot_account: ivastic-vm6-secondary-20260911
+  - name: VM6 review bot auth revoke treatment
+    conditions:
+      - title = VM6 review bot auth revoke treatment 20260915
+    actions:
+      review:
+        type: APPROVE
+        message: VM6 controlled post-revoke bot approval
+        bot_account: ivastic-vm6-secondary-20260911
